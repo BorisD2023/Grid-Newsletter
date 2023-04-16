@@ -1,0 +1,207 @@
+@font-face {
+    font-family: cormorant-light;
+    src: url(../fonts/CormorantGaramond-Light.ttf);
+}
+@font-face {
+    font-family: cormorant-bold;
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: cormorant-italic;
+    src: url(../fonts/CormorantGaramond-Italic.ttf);
+}
+@font-face {
+    font-family: cormorant-medium;
+    src: url(../fonts/CormorantGaramond-Medium.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: cormorant-light,Arial, Helvetica, sans-serif;
+    background-color: var(--main-color);
+    margin: 0.5rem 3rem;
+}
+
+:root{
+    --main-color: #deddbb;
+    --second-color:#333;
+}
+
+/* Main Style */
+
+h1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin-right: 1rem; 
+}
+
+h1::first-letter{
+    font-size: 4.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: cormorant-bold,Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-family: cormorant-bold, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin: 0.1rem;
+}
+
+h6{
+    font-size: 2rem;
+    font-family: cormorant-bold,Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+div img{
+    height: 73vh;
+    width: 35vw;
+}
+
+img{
+    height: 25px;
+    width: 25px;
+}
+
+/* Header Style */
+
+header{
+    text-align: center;
+}
+
+nav{
+    border-bottom: medium double black;
+    border-top: medium double black;
+    text-align: center;
+    color: var(--second-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Main Style */
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    width: 100%;
+    margin: 0 1rem;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 0.8fr 1fr 4fr;
+    width: 74.5vw;
+    height: 90vh;
+    gap: 1.5rem;
+}
+
+.cookware{
+    grid-area: 1/1;
+}
+
+.microwave{
+    grid-area: 1/2;
+}
+
+.knife{
+    grid-area: 2/1;
+}
+
+.fires{
+    grid-area: 2/2;
+}
+
+.burns{
+    grid-area: 3/1;
+}
+
+.pathogens{
+    grid-area: 3/2;
+}
+
+.kitchen-img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.kitchen-img p{
+    font-family: cormorant-italic, Arial, Helvetica, sans-serif;
+}
+
+/* Aside Style */
+
+
+aside{
+    width: 25.5vw;
+    text-align: center;
+    
+}
+
+.add{
+    border: medium double black;
+    margin: 1rem 1rem;
+    padding: 2rem 2rem;
+}
+.add a{
+    font-family: carmorant-bold,Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.best-knives{
+    border: medium double black;
+    margin: 1rem 1rem;
+    padding: 2rem 2rem;
+}
+
+.best-knives a{
+    color: gray;
+    font-size: 1.5rem;
+    text-underline-offset: 6px;
+}
+
+.logo{
+    border: medium double black;
+    display: block;
+    margin: 1rem 1rem;
+}
+
+.logo img{
+    width: 18vw;
+    height: 25vh;
+    filter: grayscale(100%);
+    padding: 1rem 2rem;
+    
+}
+
+/* Media querries */
+
+@media only screen and (max-width: 768px){
+    
+}
